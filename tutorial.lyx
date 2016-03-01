@@ -1,0 +1,476 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrartcl
+\begin_preamble
+\hypersetup{urlcolor=blue}
+\end_preamble
+\use_default_options true
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\branch NoChildDocument
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Lyx
+\end_layout
+
+\begin_layout Author
+Paul Rougieux
+\end_layout
+
+\begin_layout Date
+17 March 2016
+\end_layout
+
+\begin_layout Abstract
+This short introduction to the Lyx document editor explains how to insert
+ useful objects inside a document: tables, mathematical formulas, labels
+ and citations.
+ Lyx documents can be exported to PDF, Latex and other formats.
+\end_layout
+
+\begin_layout Section
+Document structure
+\end_layout
+
+\begin_layout Subsection
+Titles
+\end_layout
+
+\begin_layout Standard
+Exercise: Elaborate a document structure and generate a table of content.
+ Insert / List / TOC / Table of Contents.
+\end_layout
+
+\begin_layout Subsection
+Math Formulas
+\end_layout
+
+\begin_layout Standard
+The surface area of a sphere is given in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:surface of a sphere"
+
+\end_inset
+
+ and its volume in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:volume of a sphere"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A=4\pi r^{2}\label{eq:surface of a sphere}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V=\frac{4}{3}\pi r^{3}\label{eq:volume of a sphere}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+FIgures
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename geoid.jpg
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The geoid (source ESA)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-geoid"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Tables
+\end_layout
+
+\begin_layout Standard
+The menu Insert/Table can be used to insert tables.
+ Tables are best placed in a float.
+ A float is a part of the document that can move inside the text so that
+ it is displayed harmoniously at the beginning or at the end of a page.
+ Insert/Float/Table, then inside the float Insert/Table.
+ The float contains a caption.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+One 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Two
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Three
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Numbers 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Numbers"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When a table is too large to fit inside the page.
+ It can be shrinked to fit a certain percentage of the page width.
+\end_layout
+
+\begin_layout Subsection
+Labels and cross-references
+\end_layout
+
+\begin_layout Standard
+Labels can be used to refer to mathematical formulas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:surface of a sphere"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:volume of a sphere"
+
+\end_inset
+
+, to table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Numbers"
+
+\end_inset
+
+ and figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-geoid"
+
+\end_inset
+
+.
+ To create a label use the menu Insert / Label.
+ Then to refer to a label go to the menu Insert / Cross-reference.
+\end_layout
+
+\begin_layout Subsection
+Citations
+\end_layout
+
+\begin_layout Standard
+References can be managed in a Bibtex file with a software such as Jabref.
+ Go to Insert / List/TOC / Bibtex Bibliography / Add / Browse / Add.
+ 
+\end_layout
+
+\begin_layout Standard
+Once a bibliography has been added to the document, you can cite documents
+ inside with a call to Insert / Citation.
+ For example 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Peng2011"
+
+\end_inset
+
+ provided a nice list of recommendations for reproducible research.
+\end_layout
+
+\begin_layout Section
+Lyx Options
+\end_layout
+
+\begin_layout Subsection
+Shortcuts
+\end_layout
+
+\begin_layout Standard
+Well known shortcturs are already available in Lyx.
+ For example use CTRL+C to copy selected text and CTRL+V to paste selected
+ text.
+ To copy atable from a spreadsheet inside a Lyx table, use CTRL+SHIFT+V,
+ this preserve some elements of formatting.
+\end_layout
+
+\begin_layout Standard
+Menu actions can be mapped to create new keyboard shortcuts.
+ This can be very usefull for actions used frequently.
+ For example citation insert can be mapped to the CTRL+SHIFT+C shortcut
+ (or another key combination if your prefer).
+ 
+\end_layout
+
+\begin_layout Subsection
+Document export
+\end_layout
+
+\begin_layout Standard
+Lyx is mostly used to generate articles and reports in PDF format.
+ Lyx documents can also be exported to html or rich text format (compatible
+ with microsoft word).
+ 
+\end_layout
+
+\begin_layout Standard
+It is important to note that Lyx documents can be exported to Latex.
+ The underlying Latex can be displayed at all times from the View/Source
+ pane menu.
+\end_layout
+
+\begin_layout Subsection
+More help
+\end_layout
+
+\begin_layout Standard
+Have a look at the nice examples provided in the Lyx help menu.
+ The 
+\begin_inset CommandInset href
+LatexCommand href
+name "Lyx wiki"
+target "http://wiki.lyx.org/"
+
+\end_inset
+
+ is a nice source of formatting information.
+ Ask your questions on the great 
+\begin_inset CommandInset href
+LatexCommand href
+name "TEX.stackexchange"
+target "http://tex.stackexchange.com/"
+
+\end_inset
+
+ site.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bibliography"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
