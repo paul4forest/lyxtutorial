@@ -338,24 +338,17 @@ Labels and cross-references
 \end_layout
 
 \begin_layout Standard
-Labels can be used to refer to mathematical formulas 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:surface of a sphere"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:volume of a sphere"
-
-\end_inset
-
-, to table 
+Labels can be used to refer to table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Numbers"
+
+\end_inset
+
+, formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:volume of a sphere"
 
 \end_inset
 
@@ -367,8 +360,18 @@ reference "fig:The-geoid"
 \end_inset
 
 .
- To create a label use the menu Insert / Label.
- Then to refer to a label go to the menu Insert / Cross-reference.
+ To create a label use the menu 
+\family sans
+Insert\SpecialChar \menuseparator
+Label
+\family default
+.
+ Then to refer to a label go to the menu 
+\family sans
+Insert\SpecialChar \menuseparator
+Cross-reference
+\family default
+.
 \end_layout
 
 \begin_layout Subsection
@@ -377,13 +380,23 @@ Citations
 
 \begin_layout Standard
 References can be managed in a Bibtex file with a software such as Jabref.
- Go to Insert / List/TOC / Bibtex Bibliography / Add / Browse / Add.
- 
-\end_layout
+ Go to 
+\family sans
+Insert\SpecialChar \menuseparator
+List / TOC\SpecialChar \menuseparator
+Bibtex Bibliography\SpecialChar \menuseparator
+Add\SpecialChar \menuseparator
+Browse\SpecialChar \menuseparator
+Add.
 
-\begin_layout Standard
-Once a bibliography has been added to the document, you can cite documents
- inside with a call to Insert / Citation.
+\family default
+ Once a bibliography has been added to the document, you can cite from the
+ bibliography with a call to 
+\family sans
+Insert\SpecialChar \menuseparator
+Citation
+\family default
+.
  For example 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -433,6 +446,59 @@ Lyx is mostly used to generate articles and reports in PDF format.
 It is important to note that Lyx documents can be exported to Latex.
  The underlying Latex can be displayed at all times from the View/Source
  pane menu.
+\end_layout
+
+\begin_layout Subsection
+Latex underneath
+\end_layout
+
+\begin_layout Standard
+Click on 
+\family sans
+View\SpecialChar \menuseparator
+Source Pane
+\family default
+ to view the Latex code of your document.
+ You can insert Latex code in the document directly with 
+\family sans
+Insert \SpecialChar \menuseparator
+Tex Code
+\family default
+ or by pressing 
+\family sans
+Ctrl+L
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+Yihui Xie explained his love-hate relationship 
+\begin_inset CommandInset href
+LatexCommand href
+name "with Lyx and Latex in a blog post "
+target "http://yihui.name/en/2012/10/lyx-vs-latex/"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Quotation
+"I find it difficult to understand why there are so many people who enjoy
+ reading LaTeX code, which makes my eyes bleed.
+\begin_inset Quotes erd
+\end_inset
+
+ [...] 
+\begin_inset Quotes eld
+\end_inset
+
+LyX has a menu View => View Source to allow one to view the LaTeX source
+ of the current document, which is something I often do.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
