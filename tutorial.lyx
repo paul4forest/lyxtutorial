@@ -5,6 +5,10 @@
 \textclass scrartcl
 \begin_preamble
 \hypersetup{urlcolor=blue}
+\hypersetup{
+    citecolor=black,
+    linkcolor=black,   
+    urlcolor=blue}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -90,7 +94,7 @@ knitr
 \begin_body
 
 \begin_layout Title
-Lyx
+Lyx Tutorial
 \end_layout
 
 \begin_layout Author
@@ -103,8 +107,8 @@ Paul Rougieux
 
 \begin_layout Abstract
 This short introduction to the Lyx document editor explains how to insert
- useful objects inside a document: tables, mathematical formulas, labels
- and citations.
+ useful objects inside a document: figures, tables, mathematical formulas,
+ labels and citations.
  Lyx documents can be exported to PDF, Latex and other formats.
 \end_layout
 
@@ -166,7 +170,25 @@ V=\frac{4}{3}\pi r^{3}\label{eq:volume of a sphere}
 \end_layout
 
 \begin_layout Subsection
-FIgures
+Figures
+\end_layout
+
+\begin_layout Standard
+Figures and tables are best placed in a float.
+ A float is a part of the document that can move inside the text so that
+ it is displayed harmoniously at the beginning or at the end of a page.
+ To insert a figure click on 
+\family sans
+Insert\SpecialChar \menuseparator
+Float\SpecialChar \menuseparator
+Figure
+\family default
+ then on 
+\family sans
+Insert\SpecialChar \menuseparator
+Graphics
+\family default
+.
 \end_layout
 
 \begin_layout Standard
@@ -174,10 +196,6 @@ FIgures
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -191,7 +209,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The geoid (source ESA)
+The geoid (source 
+\begin_inset CommandInset href
+LatexCommand href
+name "ESA"
+target "http://www.esa.int/SPECIALS/Eduspace_EN/SEMUYN6SXIG_1.html"
+
+\end_inset
+
+)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:The-geoid"
@@ -220,11 +246,8 @@ Tables
 \end_layout
 
 \begin_layout Standard
-The menu Insert/Table can be used to insert tables.
- Tables are best placed in a float.
- A float is a part of the document that can move inside the text so that
- it is displayed harmoniously at the beginning or at the end of a page.
- Insert/Float/Table, then inside the float Insert/Table.
+To insert a table click on Insert/Float/Table, then inside the float Insert/Tabl
+e.
  The float contains a caption.
 \end_layout
 
@@ -236,6 +259,22 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Numbers 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Numbers"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="3">
 <features rotate="0" tabularvalignment="middle">
@@ -301,22 +340,6 @@ Three
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Numbers 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Numbers"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -397,14 +420,15 @@ Insert\SpecialChar \menuseparator
 Citation
 \family default
 .
- For example 
+ For example you can cite 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Peng2011"
 
 \end_inset
 
- provided a nice list of recommendations for reproducible research.
+ who wrote about the need to develop a “culture of reproducibility” in the
+ scientific community.
 \end_layout
 
 \begin_layout Section
@@ -515,7 +539,7 @@ target "http://wiki.lyx.org/"
 
 \end_inset
 
- is a nice source of formatting information.
+ is a comprehensive source of formatting information.
  Ask your questions on the great 
 \begin_inset CommandInset href
 LatexCommand href
@@ -524,7 +548,27 @@ target "http://tex.stackexchange.com/"
 
 \end_inset
 
- site.
+ site, question tagged 
+\begin_inset Quotes eld
+\end_inset
+
+Lyx
+\begin_inset Quotes erd
+\end_inset
+
+ will get attention from other Lyx enthusiasts.
+\end_layout
+
+\begin_layout Standard
+Do you have issues with this tutorial? 
+\begin_inset CommandInset href
+LatexCommand href
+name "Submit your issues on github"
+target "https://github.com/paul4forest/lyxtutorial/issues"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
