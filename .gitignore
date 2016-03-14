@@ -1,3 +1,7 @@
 *.lyx~
 *.lyx#
 *.bib.bak
+
+*pdf
+*.rtf
+*.docx

@@ -4,16 +4,12 @@
 \begin_header
 \textclass scrartcl
 \begin_preamble
-\hypersetup{urlcolor=blue}
 \hypersetup{
     citecolor=black,
     linkcolor=black,   
     urlcolor=blue}
 \end_preamble
 \use_default_options true
-\begin_modules
-knitr
-\end_modules
 \maintain_unincluded_children false
 \language british
 \language_package default
@@ -121,16 +117,82 @@ Titles
 \end_layout
 
 \begin_layout Standard
-Exercise: Elaborate a document structure and generate a table of content.
- Insert / List / TOC / Table of Contents.
-\end_layout
-
-\begin_layout Subsection
-Math Formulas
+Part, sections and subsections constitute a document structure which can
+ be extracted in the form of a table of content.
+ Change a standard text into a title by clicking on the formatting information
+ drop down list at the top left of the Lyx screen.
+ To insert a table of content click on 
+\family sans
+Insert\SpecialChar \menuseparator
+List / TOC\SpecialChar \menuseparator
+Table of Contents
+\family default
+.
+ In 
+\family sans
+View\SpecialChar \menuseparator
+Outline Pane
+\family default
+, you can increase the nesting depth of a title or move a whole section
+ one title above or one title below.
 \end_layout
 
 \begin_layout Standard
-The surface area of a sphere is given in equation 
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Exercise 1
+\series default
+: Create two sections with two subsections each and generate a table of
+ content.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mathematical Formulas
+\end_layout
+
+\begin_layout Standard
+To insert a mathematical formula click on 
+\family sans
+Insert\SpecialChar \menuseparator
+Math\SpecialChar \menuseparator
+Display Formula.
+
+\family default
+ To add a label for further reference to the equation click on 
+\family sans
+Insert\SpecialChar \menuseparator
+Label
+\family default
+.
+ For example, the surface area of a sphere is given in equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:surface of a sphere"
@@ -183,7 +245,7 @@ Insert\SpecialChar \menuseparator
 Float\SpecialChar \menuseparator
 Figure
 \family default
- then on 
+ then 
 \family sans
 Insert\SpecialChar \menuseparator
 Graphics
@@ -246,8 +308,18 @@ Tables
 \end_layout
 
 \begin_layout Standard
-To insert a table click on Insert/Float/Table, then inside the float Insert/Tabl
-e.
+To insert a table click on 
+\family sans
+Insert\SpecialChar \menuseparator
+Float\SpecialChar \menuseparator
+Table
+\family default
+, then inside the float
+\family sans
+ Insert\SpecialChar \menuseparator
+Table
+\family default
+.
  The float contains a caption.
 \end_layout
 
@@ -419,6 +491,12 @@ Add.
 Insert\SpecialChar \menuseparator
 Citation
 \family default
+ or the toolbar button 
+\begin_inset Info
+type  "icon"
+arg   "dialog-show-new-inset citation"
+\end_inset
+
 .
  For example you can cite 
 \begin_inset CommandInset citation
@@ -429,6 +507,48 @@ key "Peng2011"
 
  who wrote about the need to develop a “culture of reproducibility” in the
  scientific community.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Exercise 2
+\series default
+: (a) Using Google Scholar, search for a recent article citing 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Peng2011"
+
+\end_inset
+
+.
+ (b) Add the citation to the bibliography (.bib file) with a text editor
+ or with JabRef if it's available on your machine.
+ (c) Cite the article in Lyx.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -440,18 +560,35 @@ Shortcuts
 \end_layout
 
 \begin_layout Standard
-Well known shortcturs are already available in Lyx.
- For example use CTRL+C to copy selected text and CTRL+V to paste selected
+Well known shortcuts are already available in Lyx.
+ For example use Ctrl+C to copy selected text and Ctrl+V to paste selected
  text.
- To copy atable from a spreadsheet inside a Lyx table, use CTRL+SHIFT+V,
- this preserve some elements of formatting.
+ To copy a table from a spreadsheet inside a Lyx table, use Ctrl+Shift+V,
+ this will preserve some elements of formatting.
 \end_layout
 
 \begin_layout Standard
 Menu actions can be mapped to create new keyboard shortcuts.
- This can be very usefull for actions used frequently.
- For example citation insert can be mapped to the CTRL+SHIFT+C shortcut
- (or another key combination if your prefer).
+ This can be very useful for actions used frequently.
+ For example citation insert can be mapped to Ctrl+Alt+C (or another key
+ combination if your prefer).
+ Under 
+\family sans
+Tools\SpecialChar \menuseparator
+Preferences \SpecialChar \menuseparator
+Editing\SpecialChar \menuseparator
+Shortcuts
+\family default
+ show key-binding containing 
+\begin_inset Quotes eld
+\end_inset
+
+citation
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Then click on it to change the key combination.
  
 \end_layout
 
@@ -530,8 +667,9 @@ More help
 \end_layout
 
 \begin_layout Standard
-Have a look at the nice examples provided in the Lyx help menu.
- The 
+The Lyx help menu provides many more details on all the examples provided
+ above.
+ In addition, the 
 \begin_inset CommandInset href
 LatexCommand href
 name "Lyx wiki"
@@ -539,8 +677,8 @@ target "http://wiki.lyx.org/"
 
 \end_inset
 
- is a comprehensive source of formatting information.
- Ask your questions on the great 
+ is an evolving source of formatting information.
+ Ask your remaining questions on the great 
 \begin_inset CommandInset href
 LatexCommand href
 name "TEX.stackexchange"
@@ -548,7 +686,8 @@ target "http://tex.stackexchange.com/"
 
 \end_inset
 
- site, question tagged 
+ forum.
+ Be sure to use the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -556,14 +695,11 @@ Lyx
 \begin_inset Quotes erd
 \end_inset
 
- will get attention from other Lyx enthusiasts.
-\end_layout
-
-\begin_layout Standard
-Do you have issues with this tutorial? 
+ tag to get attention from other enthusiasts.
+ If you have comments related to this tutorial, 
 \begin_inset CommandInset href
 LatexCommand href
-name "Submit your issues on github"
+name "submit your issues on github"
 target "https://github.com/paul4forest/lyxtutorial/issues"
 
 \end_inset
